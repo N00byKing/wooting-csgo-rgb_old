@@ -7,11 +7,12 @@
       ],
       "include_dirs": [
         "<!@(node -p \"require('node-addon-api').include\")",
+        "/usr/local/include/"
         "/usr/include/"
       ],
       "libraries": [
         "/lib64/libhidapi-libusb.so",
-        "/lib64/libwooting-rgb-sdk.so",
+        "/usr/local/lib/libwooting-rgb-sdk.so",
         "/lib64/libjsoncpp.so"
       ],
       "dependencies": [
